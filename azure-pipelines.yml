@@ -10,7 +10,7 @@ trigger:
 pool:
   vmImage: 'windows-latest'
 
-name: $(BuildDefinitionName)_$(SourceBranchName)_$(packageJsonVersion)_$(Date:yyyyMMdd)$(Rev:.r)
+name: $(packageJsonVersion)-$(Date:yyyyMMdd)$(Rev:.r)-$(SourceBranchName)
 
 steps:
 - bash: |
