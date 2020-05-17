@@ -1,0 +1,53 @@
+# Node.js with webpack
+# Build a Node.js project using the webpack CLI.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- release/*
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '.'
+    customCommand: 'install -g webpack webpack-cli --save-dev'
+  displayName: 'npm install webpack'
+  
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: '.'
+  displayName: 'npm install'
+  
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '.'
+    customCommand: 'run build'
+  displayName: 'npm run build'
+
+- script: |
+    npx electron-builder --win
+  displayName: 'npx electron-builder'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'publish'
+    Contents: '*.exe'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+  displayName: 'Copying exe to ArtifactStagingDirectory'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)'
+    artifact: 'Navelsk'
+    publishLocation: 'pipeline'
