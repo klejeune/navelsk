@@ -13,8 +13,8 @@ pool:
 name: $(packageJsonVersion)-$(Date:yyyyMMdd)$(Rev:.r)-$(SourceBranchName)
 
 steps:
-- bash: |
-    echo "##vso[task.setvariable variable=packageJsonVersion]$(node -p "require('./package').version")"
+#- bash: |
+#    echo "##vso[task.setvariable variable=packageJsonVersion]$(node -p "require('./package').version")"
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
