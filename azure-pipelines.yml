@@ -46,10 +46,10 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'publish'
-    Contents: '*.exe'
+    SourceFolder: 'dist'
+    Contents: '**/*'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
-  displayName: 'Copying exe to ArtifactStagingDirectory'
+  displayName: 'Copying dist folder to ArtifactStagingDirectory'
 
 - task: PublishPipelineArtifact@1
   inputs:
