@@ -18,25 +18,24 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    workingDir: '$(npm-folder)'
+    workingDir: '.'
     customCommand: 'install -g webpack webpack-cli --save-dev'
   displayName: 'npm install webpack'
   
 - task: Npm@1
   inputs:
     command: 'install'
-    workingDir: '$(npm-folder)'
+    workingDir: '.'
   displayName: 'npm install'
   
 - task: Npm@1
   inputs:
     command: 'custom'
-    workingDir: '$(npm-folder)'
+    workingDir: '.'
     customCommand: 'run build'
   displayName: 'npm run build'
 
 - script: |
-    cd "$(npm-folder)"
     npx electron-builder --win
   displayName: 'npx electron-builder'
 
