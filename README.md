@@ -5,6 +5,9 @@ The displayed islands are the ones with the best turnip price and no queue.
 
 ![Screenshot of Navelsk](doc/readme/screenshot.png)
 
+# How to use
+Go to the [Release page](https://github.com/klejeune/navelsk/releases), download and run the Navelsk.x.x.x.exe file.
+
 # Source code
 ## Technology
 This software is built with the following technology:
