@@ -39,8 +39,15 @@ steps:
     npx electron-builder --win
   displayName: 'npx electron-builder'
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'publish'
+    Contents: '*.exe'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+  displayName: 'Copying exe to ArtifactStagingDirectory'
+
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)/Navelsk/s/publish/Navelsk 1.0.0.exe'
+    targetPath: '$(Build.ArtifactStagingDirectory)'
     artifact: 'Navelsk'
     publishLocation: 'pipeline'
