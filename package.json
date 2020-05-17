@@ -1,0 +1,65 @@
+{
+  "name": "navelsk",
+  "version": "1.0.0",
+  "description": "The best islands on turnip.exchange!",
+  "main": "./electron.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "start": "npm run build && electron ./dist/electron.js",
+    "publish": "npm run build && electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bootstrap": "^4.3.3",
+    "@types/react": "^16.9.35",
+    "@types/react-bootstrap": "^1.0.1",
+    "@types/react-dom": "^16.9.8",
+    "bootstrap": "^4.5.0",
+    "css-loader": "^3.5.3",
+    "electron": "^8.3.0",
+    "electron-builder": "^22.6.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.4",
+    "typescript": "^3.9.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "build": {
+    "appId": "net.himmelsk.navelsk.app",
+    "productName": "Navelsk",
+    "copyright": "Copyright Alizee © 2020",
+    "buildVersion": "1.0.0",
+    "compression": "maximum",
+    "directories": {
+      "output": "./publish"
+    },
+    "files": [
+      "package.json",
+      {
+        "from": "./dist",
+        "to": ".",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": "portable"
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "moment": "^2.25.3",
+    "popper.js": "^1.16.1"
+  }
+}
