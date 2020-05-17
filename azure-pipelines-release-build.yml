@@ -9,6 +9,8 @@ trigger:
 pool:
   vmImage: 'windows-latest'
 
+name: $(Build.SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+
 steps:
 - task: NodeTool@0
   inputs:
