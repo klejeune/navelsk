@@ -1,12 +1,20 @@
 # Navelsk
-This program displays the 5 best islands available on https://turnip.exchange.
+This program displays the "best" Animal Crossing: New Horizon islands available on https://turnip.exchange.
 
-The displayed islands are the ones with the best turnip price and no queue.
+The displayed islands are the ones with the **best turnip price** and **no queue**.
 
 ![Screenshot of Navelsk](doc/readme/screenshot.png)
 
 # How to use
-Go to the [Release page](https://github.com/klejeune/navelsk/releases), download and run the Navelsk.x.x.x.exe file.
+- Go to the [Release page](https://github.com/klejeune/navelsk/releases)
+- Download the last Navelsk.x.x.x.exe file
+- Double-click the file you just downloaded
+- If Microsoft Defender SmartScreen shows you a warning, click on "More info" then "Run anyway"
+- Enjoy those sweet 600+ bells islands
+
+Use this program during the week (tuesday-friday), when the prices are the highest on some islands.
+
+Get in the queue quickly on turnip.exchange, because people rush to these high-price islands.
 
 # Source code
 ## Technology
