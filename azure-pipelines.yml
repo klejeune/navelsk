@@ -14,7 +14,7 @@ pool:
 
 steps:
 - bash: |
-    echo ##vso##vso[build.updatebuildnumber]$(node -p "require('./package').version")
+    echo ##vso[build.updatebuildnumber]$(node -p "require('./package').version")
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
