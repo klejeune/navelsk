@@ -20,7 +20,7 @@ const Index = () => {
                 <div>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link electron-no-drag" href="#" onClick={() => remote.app.quit()}>Quit</a>
+                            <a className="nav-link electron-no-drag" href="#" onClick={() => remote.app.quit()}>Exit</a>
                         </li>
                     </ul>
                 </div>
