@@ -36,10 +36,6 @@ steps:
     customCommand: 'run build'
   displayName: 'npm run build'
 
-- script: |
-    npx electron-builder --win
-  displayName: 'npx electron-builder'
-
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'dist'
