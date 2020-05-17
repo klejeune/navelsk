@@ -16,8 +16,6 @@ Use this program during the week (tuesday-friday), when the prices are the highe
 
 Get in the queue quickly on turnip.exchange, because people rush to these high-price islands.
 
-![Screenshot of Navelsk](doc/readme/screenshot.png)
-
 # How to use
 Go to the [Release page](https://github.com/klejeune/navelsk/releases), download and run the Navelsk.x.x.x.exe file.
 
