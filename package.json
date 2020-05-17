@@ -39,6 +39,7 @@
     "productName": "Navelsk",
     "copyright": "Copyright Alizee © 2020",
     "compression": "maximum",
+    "artifactName": "${productName}-v${version}.${ext}",
     "directories": {
       "output": "./publish"
     },
