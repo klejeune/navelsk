@@ -42,6 +42,6 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)/Navelsk/s/$(npm-folder)/publish/Navelsk 1.0.0.exe'
+    targetPath: '$(Pipeline.Workspace)/Navelsk/s/publish/Navelsk 1.0.0.exe'
     artifact: 'Navelsk'
     publishLocation: 'pipeline'
