@@ -16,6 +16,8 @@ Use this program during the week (tuesday-friday), when the prices are the highe
 
 Get in the queue quickly on turnip.exchange, because people rush to these high-price islands.
 
+![Screenshot of Navelsk](doc/readme/screenshot.png)
+
 # Source code
 ## Technology
 This software is built with the following technology:
