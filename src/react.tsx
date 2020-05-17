@@ -20,7 +20,7 @@ const Index = () => {
                 <div>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link electron-no-drag" href="#" onClick={() => remote.app.quit()}>Quit</a>
+                            <a className="nav-link electron-no-drag" href="#" onClick={() => remote.app.quit()}>Exit</a>
                         </li>
                     </ul>
                 </div>
@@ -34,7 +34,7 @@ const Index = () => {
         </Container>
         <footer className="border-top footer text-muted fixed-bottom">
             <div className="container">
-                &copy; 2020 - Navelsk by <a href="#" onClick={() => {remote.shell.openExternal("https://twitter.com/a1izee"); return false;}}>Alizee</a>
+                &copy; 2020 - <a href="#" onClick={() => {remote.shell.openExternal("https://github.com/klejeune/navelsk"); return false;}}>Navelsk</a> by <a href="#" onClick={() => {remote.shell.openExternal("https://twitter.com/a1izee"); return false;}}>Alizee</a>
             </div>
         </footer>
     </div>
