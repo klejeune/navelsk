@@ -34,7 +34,7 @@ const Index = () => {
         </Container>
         <footer className="border-top footer text-muted fixed-bottom">
             <div className="container">
-                &copy; 2020 - Navelsk by <a href="#" onClick={() => {remote.shell.openExternal("https://twitter.com/a1izee"); return false;}}>Alizee</a>
+                &copy; 2020 - <a href="#" onClick={() => {remote.shell.openExternal("https://github.com/klejeune/navelsk"); return false;}}>Navelsk</a> by <a href="#" onClick={() => {remote.shell.openExternal("https://twitter.com/a1izee"); return false;}}>Alizee</a>
             </div>
         </footer>
     </div>
