@@ -38,7 +38,6 @@
     "appId": "net.himmelsk.navelsk.app",
     "productName": "Navelsk",
     "copyright": "Copyright Alizee © 2020",
-    "buildVersion": "1.0.0",
     "compression": "maximum",
     "directories": {
       "output": "./publish"
