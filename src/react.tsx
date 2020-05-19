@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import 'bootstrap';
 import './react.scss';
 import { remote } from "electron";
+const appVersion = require('../package.json').version;
 
 const Index = () => {
     return <div>
@@ -34,7 +35,7 @@ const Index = () => {
         </Container>
         <footer className="border-top footer text-muted fixed-bottom">
             <div className="container">
-                <a href="#" onClick={() => {remote.shell.openExternal("https://github.com/klejeune/navelsk"); return false;}}>Navelsk</a>, made with love by <a href="#" onClick={() => {remote.shell.openExternal("https://twitter.com/a1izee"); return false;}}>Alizee</a>
+                <a href="#" onClick={() => {remote.shell.openExternal("https://github.com/klejeune/navelsk"); return false;}}>Navelsk</a> v{appVersion}, made with love by <a href="#" onClick={() => {remote.shell.openExternal("https://twitter.com/a1izee"); return false;}}>Alizee</a>
             </div>
         </footer>
     </div>
