@@ -30,6 +30,7 @@ This software is built with the following technology:
 ### Build
 To build Navelsk, use this command line in Powershell:
 ```
+npm run install
 npm run build
 ```
 
