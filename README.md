@@ -16,6 +16,11 @@ Use this program during the week (tuesday-friday), when the prices are the highe
 
 Get in the queue quickly on turnip.exchange, because people rush to these high-price islands.
 
+# License
+Navelsk uses the MIT license.
+
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Source code
 ## Technology
 This software is built with the following technology:
